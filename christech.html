@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: ghostwhite;
+            }
+        .header {
+            font-size: 50px;
+            font-weight: bold;
+            color:white; 
+            padding: 30px;
+            background:linear-gradient(135deg,blue 0%,dodgerblue 40%);
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            box-shadow: 0 6px 32px rgba(167, 112, 239, 0.12);
+            opacity: 0.9;
+            position:fixed;
+            z-index: 10;
+            width: 100%;
+        }
+        #Chris{
+            margin: 0 90px;
+        }
+        span {
+            color: #f5b301;
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            font-size: 30px;
+            flex-direction: row;
+            margin-right: 100px;
+            transition: 0.2s;
+        }
+        .nav-bar ul li:hover {
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding: 5px;
+            transform: matrix(1.1);
+        }
+        .container1 {
+            position: relative;
+            color: white;
+            background: url(Pictures/freepik__talk__9309.png)center/cover no-repeat,
+            linear-gradient(120deg,blue 0%,dodgerblue 40%);
+            padding-top: 120px;
+        }
+        
+        .image1 {
+            width: 100%;
+            height: 70%;
+            opacity: 0.5;
+        }
+        #left-text h4 {
+            font-size: 35px;
+            margin-bottom: 20px;
+            color: #f5b301;
+        }
+        p {
+            font-size: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #btn1 {
+            font-size: 30px;
+            padding: 20px 30px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            background-color: #f5b301;
+            color: black;
+            font-weight: bold;
+        }
+        #btn2 {
+            font-size: 30px;
+            padding: 20px 30px;
+            border: 1px solid white;
+            border-radius: 30px;
+            cursor: pointer;
+            background-color:transparent;
+            color: white;
+            font-weight: bold;
+        }
+        .text-box1 {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: auto;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        #right-image{
+            height: 100%;
+            width: 100%;
+            margin-right: 5px;
+            border-radius: 50%;
+            border: 8px solid rgba(255, 255, 255, 0.3);
+        }
+        #left-text{
+            height: 40%;
+            width: 50%;
+            margin:70px;
+            color: white;
+            font-size: 50px;
+        }
+        .right-image{
+            display: flex;
+            align-items: center;
+            width:30%;
+            left: 5%;
+            justify-content: center;
+        }
+         @media (max-width: 600px){
+         .header{
+            width:fit-content;
+         }
+         }
+         .img{
+            height:60%;
+         }
+            .about-us{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: stretch;
+                gap: 50px;
+                padding: 50px;
+                margin: 60px 60px;
+            }
+            #about-image img{
+                height: 700px;
+                width: 100%;
+                border-radius: 20px;
+                flex: 50%;
+                box-shadow: 0 20px 45px rgba(18, 60, 128, 0.2);
+            }
+            #about-us{
+                flex: 50%;
+                width: 100%;
+            }
+            #about-us h1{
+                font-size: 60px;
+                letter-spacing: 2px;
+                margin-bottom: 40px;
+            }
+            #about-us p{
+                font-size: 50px;
+            }
+            #aboutunderline{
+                width: 100px;
+                height: 8px;
+                background-color: #f5b301;
+                margin-top:2px 0;
+            }
+            .Our-services{
+                width: 100%;
+                background-color: white;
+                text-align: center;
+                padding:40px;
+                margin: 10px;
+            }.Our-services h1{
+                font-size:50px;
+                letter-spacing: 2px;
+                margin: 60px;
+            }
+            .services{
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                height: 500px;
+            }
+            .service{
+                border-radius: 40px;
+                box-shadow:0 20px 60px rgba(18, 60, 128, 0.2) ;
+                margin: 30px;
+                padding: 30px;
+                text-align: left;
+                height: 100%;
+            }
+            .service p{
+                font-size: 60;
+            }
+            .service h2{
+                font-size: 60px;
+            }
+            .contactusandform{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: row;
+                background-color: black;
+            }
+            .contactus{
+                flex: 50%;
+                padding: 50px;
+                margin: 50px;
+                color:white;
+            }
+            .contactform{
+                flex: 40%;
+                padding: 50px;
+                margin: 50px;
+                color:white;
+                background-color:rgb(24, 24, 24);
+                border-radius: 30px;
+            }
+            .contactus h1{
+                font-size: 60px;
+                margin-bottom: 20px;
+            }
+            .contactus p{
+                font-size: 40px;
+            }
+            .contactus ul{
+                list-style: none;
+                font-size: 40px;
+                margin: 20px 0;
+            }
+            .contactus a{
+                margin: 20px 0;
+                text-decoration: underline 1px solid white;
+                color: white;
+                font-size: 30px;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(24, 24, 24);
+            }
+            form label{
+                font-size: 30px;
+                margin:10px;
+            }
+            form input{
+                font-size: 30px;
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                margin: 10px 0 20px 0;
+            }
+            form select{
+                font-size: 30px;
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                margin: 10px 0 20px 0;
+            }
+            .submit-button{
+                font-size: 30px;
+                padding: 20px;
+                border-radius: 30px;
+                border: none;
+                margin:40px auto;
+                width: 100%;
+                background-color: #f5b301;
+                color: black;
+            }
+            textarea{
+                font-size: 30px;
+            }
+            .mainfooter{
+                background-color: rgb(10, 38, 64);
+                color: white;
+                height: 100px;
+            }
+            .footer1{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 50%;
+                margin: auto;
+            }
+    </style>
+</head>
+<body>
+    <!--HEADER SECTION-->
+    <div class="header">
+        <div id="Chris">
+            <header><span>Chris Tech </span>Installation</header>
+        </div>
+        <div>
+        <nav class="nav-bar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+    <!--HERO SECTION-->
+    <div class="container1">
+        <div id="text-box1">
+            <div class="text-box1">
+                <div id="left-text">
+                    <h4>SOLAR SPECIALISTS SINCE 2010</h4>
+                    <h1>Powering Homes & Businesses With Reliable Solar Energy</h1>
+                    <p>From custom solar panel installation to expert repairs and maintenance, Chris Tech Installation keeps your energy systems
+                    running at a peak performance.Our certified technicians deliver safe, efficient, and affordable clean energy solutions.
+                    </p>
+                    <button id="btn1">Explore Services</button>
+                    <button id="btn2">Request a Quote</button>
+                    <p>Complete solar installation packages <br><br>AC and inverter integration <br><br>Rapid-response repair services</p>
+                </div>
+                <div class="right-image">
+                    <img src="Pictures/freepik__talk__9309.png" alt="" id="right-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ABOUT SECTION-->
+    <div class="about-us">
+        <div id="about-image">
+            <img src="about-image.jpg" alt="" >
+        </div>
+        <div id="about-us">
+            <h1>About us</h1>
+            <div id="aboutunderline"></div>
+            <p>Chris Tech Installation is your trusted partner for dependable solar energy solutions. We combine skilled electricians, premium equipment and meticulous craftsmanship to deliver installations that stand the test of time.
+<br><br>
+Whether you are powering a new build, upgrading an existing system or in need of emergency repairs, our team provides clear guidance and hands-on support every step of the way. We are committed to keeping your home or business powered safely and sustainably.</p>
+        </div>
+    </div>
+    <!--SERVICES SECTION-->
+    <div class="Our-services">
+        <h1>OUR SERVICES</h1>
+        <div class="services">
+            <div class="service">
+                <h2>Solar System Installation</h2>
+                <p>Custom solar setups with high-efficiency panels, inverters and batteries tailored to your power goals.</p>
+            </div>
+            <div class="service">
+                <h2>Maintenance & Repairs</h2>
+                <p>Fast troubleshooting, inverter swaps, panel cleaning and performance optimization to minimize downtime.</p>
+            </div>
+            <div class="service">
+                <h2>Energy Audits & Upgrades</h2>
+                <p>Load assessments, AC integration and smart monitoring that keep your system efficient and future-ready.</p>
+            </div>
+            <div class="service">
+                <h2>Certified Electricians</h2>
+                <p>Experienced technicians delivering safe wiring, backup power solutions and professional installations.</p>
+            </div>
+        </div>
+    </div>
+    <!--CONTACT SECTION-->
+    <div class="contactusandform">
+        <div class="contactus">
+            <h1>GET IN TOUCH</h1>
+            <p>Ready to install, upgrade or service your solar system? Reach us via phone or WhatsApp and our team will schedule a site visit right away.</p>
+            <ul>
+                <li><a href="tel:0909 431 5948">0909 431 5948</a></li>
+                <li><a href="https//:wa.me.0916 293 4241">0916 293 4241</a></li>
+                <li><a href="info@christechinstallation.com">info@christechinstallation.com</a></li>
+            </ul>
+            <p>Nationwide on-site installation & support</p>
+        </div>
+        <div class="contactform">
+            <form>
+                <label for="text">Full Name</label>
+                <br>
+                <input type="text" placeholder="Type your full name here" required>
+                <br>
+                <label for="email">Email Address</label>
+                <br>
+                <input type="email" placeholder="you@example.com" required>
+                <br>
+                 <label for="service">Service Needed</label>
+                 <br>
+                 <select id="service" name="service" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="installation">Solar Installation</option>                            <option value="repair">Repairs &amp; Maintenance</option>
+                    <option value="upgrade">System Upgrade</option>
+                    <option value="audit">Energy Audit</option>
+                  </select>
+                    <label for="message">How can we help?</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your project" required></textarea>
+                    <button type="submit" class="submit-button">Send Request</button>
+                </form>
+            </form>
+        </div>
+    </div>
+    <footer class="mainfooter">
+        <div class="footer1">
+            <p>Services</p>
+            <p>Support</p>
+            <p>info@christechinstallation.com</p>
+        </div>
+        <div>
+            <p>&copy;2025 Chris Tech Installation.All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
